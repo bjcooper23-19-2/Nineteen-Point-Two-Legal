@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <link rel="stylesheet" href="/assets/css/legal.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WAIA Security Summary | Nineteen Point Two</title>
+    <meta
+      name="description"
+      content="Practical security measures Nineteen Point Two Limited uses to protect WAIA and customer data."
+    />
+    <link rel="canonical" href="https://legal.nineteenpointtwo.com/security/" />
+    <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="/" aria-label="Nineteen Point Two home">
+          <img
+            class="brand-logo"
+            src="/assets/logo/logo-horizontal.svg"
+            alt="Nineteen Point Two"
+            width="800"
+            height="200"
+          />
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-navigation"
+        >
+          Menu
+        </button>
+        <div class="nav-links" id="site-navigation">
+          <a href="https://waia.co.uk/?s=19">WAIA</a>
+          <a href="https://outsideclarity.co.uk/">Outside Clarity</a>
+          <a href="/revenue-review/">Revenue Review</a>
+          <a href="/#operating-lens">Operating Lens</a>
+        </div>
+        <div class="nav-actions">
+          <a class="nav-sign-in" href="https://app.waia.co.uk/login"
+            >Sign in</a
+          >
+          <a
+            class="nav-cta"
+            href="https://tally.so/r/gDgbQP"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ask to see WAIA</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="wrap">
+        <section class="hero">
+          <div class="eyebrow">Legal</div>
+          <h1>WAIA Security Summary</h1>
+          <p class="standfirst">
+            Practical security measures Nineteen Point Two Limited uses to
+            protect WAIA and customer data.
+          </p>
+          <div class="meta-row">
+            <span>Last updated: 27 May 2026</span>
+            <span>Version: 1.0</span>
+          </div>
+        </section>
+        <section class="legal-content">
+          <p>
+            This Security Summary explains the practical measures Nineteen Point
+            Two uses to protect WAIA and customer data.
+          </p>
+          <p>
+            It is designed to provide commercial and procurement confidence. It
+            does not represent a formal security certification.
+          </p>
+          <h2>1. Security approach</h2>
+          <p>
+            WAIA is designed around controlled access, role-based permissions,
+            supplier-backed infrastructure and proportionate operational
+            security.
+          </p>
+          <p>
+            The platform is intended to process ordinary workplace learning and
+            adoption data. It is not intended to process special category data,
+            highly sensitive HR casework, medical records, disciplinary records,
+            financial account information or national identifiers.
+          </p>
+          <h2>2. Access controls</h2>
+          <p>WAIA uses role-based access controls. Typical roles include:</p>
+          <ul>
+            <li>platform administrator</li>
+            <li>organisation administrator</li>
+            <li>learner</li>
+          </ul>
+          <p>
+            Organisation administrators should only see users, settings,
+            guidance and reporting connected to their own organisation.
+          </p>
+          <p>
+            Platform administrator access should be restricted to authorised
+            Nineteen Point Two personnel and used only where necessary to
+            operate, support or secure the service.
+          </p>
+          <h2>3. Authentication</h2>
+          <p>
+            WAIA uses authentication services provided through its configured
+            platform and infrastructure providers.
+          </p>
+          <p>
+            Authentication configuration should be reviewed regularly to
+            confirm:
+          </p>
+          <ul>
+            <li>only authorised users can access WAIA</li>
+            <li>administrator access is limited</li>
+            <li>inactive users can be removed</li>
+            <li>access is revoked when no longer required</li>
+            <li>
+              production credentials are not exposed in code or public
+              repositories
+            </li>
+          </ul>
+          <h2>4. Data segregation</h2>
+          <p>
+            WAIA is designed as a multi-tenant platform. Customer data should be
+            logically separated so that organisation administrators and learners
+            access only the records appropriate to their organisation and role.
+          </p>
+          <p>
+            Row-level security and database access rules should be maintained
+            and tested where supported by the database provider.
+          </p>
+          <h2>5. Infrastructure</h2>
+          <p>
+            WAIA uses third-party infrastructure providers for application
+            hosting, database, authentication, storage, deployment and related
+            services.
+          </p>
+          <p>
+            Current providers include Lovable Cloud and Supabase, with GitHub
+            used for code hosting and website deployment where relevant.
+          </p>
+          <p>
+            Nineteen Point Two relies on these providers for parts of the
+            underlying security model, including physical security, core
+            infrastructure security, encryption capabilities and service
+            availability.
+          </p>
+          <h2>6. Encryption</h2>
+          <p>WAIA should use HTTPS for data in transit.</p>
+          <p>
+            Encryption at rest depends on the relevant hosting, database and
+            storage providers. Provider documentation should be retained for
+            procurement review.
+          </p>
+          <h2>7. Logging and monitoring</h2>
+          <p>
+            WAIA and its providers may generate technical logs for security,
+            troubleshooting, reliability and performance.
+          </p>
+          <p>
+            Logs may include IP addresses, user identifiers, device information,
+            timestamps, error details and request metadata.
+          </p>
+          <p>
+            Log access should be limited to authorised personnel and retained
+            only as long as reasonably required.
+          </p>
+          <h2>8. Backups and recovery</h2>
+          <p>
+            Backup and recovery arrangements depend on the configured
+            infrastructure providers.
+          </p>
+          <p>Nineteen Point Two should confirm and document:</p>
+          <ul>
+            <li>whether production data is backed up</li>
+            <li>backup frequency</li>
+            <li>backup retention</li>
+            <li>restore process</li>
+            <li>who can access backups</li>
+            <li>how deleted data is handled in backups</li>
+          </ul>
+          <h2>9. Supplier security</h2>
+          <p>
+            Nineteen Point Two uses suppliers to operate WAIA. Suppliers that
+            process Customer Personal Data should be covered by data processing
+            terms or equivalent contractual commitments.
+          </p>
+          <p>
+            Supplier security documentation should be reviewed and retained
+            where available.
+          </p>
+          <h2>10. Incident handling</h2>
+          <p>
+            Nineteen Point Two will investigate suspected security incidents and
+            take reasonable steps to contain, assess and remediate confirmed
+            issues.
+          </p>
+          <p>
+            Where a confirmed personal data breach affects Customer Personal
+            Data, Nineteen Point Two will notify the affected customer without
+            undue delay in line with the Data Processing Agreement.
+          </p>
+          <h2>11. Customer responsibilities</h2>
+          <p>Customers are responsible for:</p>
+          <ul>
+            <li>choosing appropriate organisation administrators</li>
+            <li>removing users who no longer need access</li>
+            <li>keeping login credentials secure</li>
+            <li>using WAIA in line with internal policies</li>
+            <li>avoiding upload of unnecessary sensitive data</li>
+            <li>deciding how WAIA records are used internally</li>
+          </ul>
+          <h2>12. Security contact</h2>
+          <p>
+            For security questions, contact <b>ben@nineteenpointtwo.com</b>.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <span>&copy; 2026 Nineteen Point Two</span>
+        <span
+          >Operating clarity across revenue systems and workplace AI
+          adoption.</span
+        >
+        <span
+          ><a href="https://waia.co.uk/?s=19">WAIA</a> |
+          <a href="https://outsideclarity.co.uk/">Outside Clarity</a> |
+          <a href="/revenue-review/">Revenue Review</a></span
+        >
+        <span
+          ><a href="/">Legal</a> | <a href="/privacy/">Privacy</a> |
+          <a href="/cookies/">Cookies</a> |
+          <a href="/website-terms/">Website Terms</a> |
+          <a href="/subprocessors/">Subprocessors</a></span
+        >
+      </div>
+    </footer>
+    <script src="/assets/js/nav.js" defer></script>
+    <!-- Cloudflare Web Analytics -->
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "77253ebb743e400a925844f457dfb3e8"}'
+    ></script>
+    <!-- End Cloudflare Web Analytics -->
+  </body>
+</html>
