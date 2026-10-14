@@ -13,14 +13,15 @@
       href="https://legal.nineteenpointtwo.com/subprocessors/"
     />
     <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/assets/css/legal.css" />
+    <link rel="stylesheet" href="/assets/css/legal.css?v=20261014" />
   </head>
   <body>
     <header>
       <nav class="nav" aria-label="Primary">
         <a class="brand" href="/"><strong>NINETEEN POINT TWO</strong></a>
         <div class="nav-links">
-          <a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a
+          <a href="/website-terms/">Website terms</a
+          ><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a
           ><a href="/data-processing-agreement/">DPA</a
           ><a href="/security/">Security</a
           ><a href="/subprocessors/">Subprocessors</a>
@@ -37,8 +38,8 @@
             improve WAIA where they may process customer personal data.
           </p>
           <div class="meta-row">
-            <span>Last updated: 9 September 2026</span>
-            <span>Version: 1.1</span>
+            <span>Proposed: 14 October 2026</span>
+            <span>Version: 1.2 draft</span>
           </div>
         </section>
         <section class="legal-content">
@@ -50,89 +51,51 @@
             Where these providers process Customer Personal Data on behalf of
             Nineteen Point Two, they are treated as subprocessors.
           </p>
-          <p>This list is maintained as the technical setup changes.</p>
-          <h2>Current confirmed supplier posture</h2>
+          <p>
+            The current WAIA source and operations runbook identify the
+            following processing routes. Their exact live deployment,
+            contracting chain and transfer arrangements must be verified before
+            this draft is adopted as a customer-facing subprocessor register.
+          </p>
+          <h2>WAIA processing routes for verification</h2>
           <ul>
             <li>
-              Lovable should be treated as an active WAIA subprocessor while
-              WAIA is hosted and operated through Lovable Cloud or related
-              Lovable services.
+              <b>Lovable:</b> WAIA source includes Lovable service routes and
+              prior procurement material describes Lovable Cloud hosting. Its
+              current production hosting role and contractual relationship need
+              operator confirmation.
             </li>
             <li>
-              Lovable’s published terms describe Lovable Cloud as a managed
-              hosting and back-end environment that may include database
-              hosting, authentication, file/object storage and API endpoints,
-              provisioned on third-party infrastructure currently identified as
-              Supabase.
+              <b>Supabase:</b> WAIA source uses Supabase-backed authentication,
+              database and storage functions for customer and learner records.
+              Whether Supabase is a direct supplier or sits in Lovable’s
+              underlying chain needs confirmation.
             </li>
             <li>
-              Supabase should be treated as a core infrastructure subprocessor
-              in the WAIA chain because WAIA uses Supabase-backed
-              authentication, database-backed tenancy, learner records,
-              progress, certificates, organisation guidance and
-              acknowledgements.
-            </li>
-            <li>
-              Where Supabase is provided through Lovable Cloud, Supabase can be
-              described as part of Lovable’s underlying
-              infrastructure/subprocessor chain. If Nineteen Point Two later
-              controls a standalone Supabase project directly, Supabase should
-              also be listed as Nineteen Point Two’s direct subprocessor.
-            </li>
-            <li>
-              Lovable and/or Supabase should be treated as the current
-              transactional email route for WAIA account and invite emails,
-              based on the current operational understanding.
-            </li>
-            <li>
-              Microsoft 365 and Google Workspace should be treated as business
-              operations suppliers for correspondence, documents and
-              administration.
-            </li>
-            <li>
-              Google Search Console is currently used for website search
-              visibility/performance only. No Google Analytics, advertising
-              pixel or behavioural analytics tool is currently known to be
-              active.
-            </li>
-            <li>
-              OpenAI, Anthropic, Gemini or similar AI model providers are not
-              active WAIA runtime subprocessors based on current evidence and
-              should not receive learner personal data unless a future feature
-              is documented and approved.
-            </li>
-            <li>
-              Resend support exists in product source but production supplier
-              use requires owner/configuration confirmation; it is not listed as
-              an active subprocessor on source availability alone.
-            </li>
-            <li>
-              Tally is treated as an enquiry-processing provider for submitted
-              enquiries, not assumed to receive WAIA learner evidence.
-            </li>
-            <li>
-              OpenAI and Stripe remain separately identified for Outside Clarity
-              where applicable; they are not active WAIA runtime subprocessors
-              on current evidence.
+              <b>Resend:</b> the WAIA transactional email delivery runbook
+              records Resend as the production sender for account and invite
+              emails. This supersedes the previous statement that Resend is
+              merely source support. Confirm live activation, data fields,
+              agreement and transfer position before finalising its subprocessor
+              entry.
             </li>
           </ul>
-          <h2>Providers not intended to receive learner personal data</h2>
+          <h2>Other supplier roles</h2>
           <p>
-            Some tools may be used for internal content creation, code
-            generation, planning or marketing without intentionally receiving
-            Customer Personal Data.
+            Cloudflare Web Analytics measures public WAIA website use. Google
+            Search Console supports search performance. Tally receives public
+            enquiries and their submitted attribution context. These are website
+            or enquiry services, not WAIA learner-data subprocessors on the
+            evidence reviewed. Business email, document, finance and
+            professional-adviser suppliers serve ordinary business operations
+            and must be assessed separately for any Customer Personal Data they
+            actually receive.
           </p>
           <p>
-            Customer Personal Data should not be entered into these tools
-            unless:
+            WAIA source reviewed for this draft does not establish an active AI
+            model provider receiving learner personal data. A future feature
+            that changes this would require a fresh supplier and DPA review.
           </p>
-          <ul>
-            <li>the tool is listed as an active subprocessor where required</li>
-            <li>a data processing agreement is in place</li>
-            <li>the processing purpose is documented</li>
-            <li>the customer has been informed where required</li>
-            <li>the feature or workflow has been approved internally</li>
-          </ul>
           <h2>Subprocessor updates</h2>
           <p>
             Nineteen Point Two may update this list as providers are added,
