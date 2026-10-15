@@ -35,8 +35,8 @@
             personal data across the website, customer relationships and WAIA.
           </p>
           <div class="meta-row">
-            <span>Proposed: 14 October 2026</span>
-            <span>Version: 1.2 draft</span>
+            <span>Last updated: 15 October 2026</span>
+            <span>Version: 1.3</span>
           </div>
         </section>
         <section class="legal-content">
@@ -209,6 +209,14 @@
           <p>
             Please do not send us special category data unless we specifically
             ask for it and there is a clear reason to do so.
+          </p>
+          <p>
+            Tally hosts our Contact Us and Visibility Check forms. The Contact
+            Us form has no connected external integration. Visibility Check
+            submissions also go to a Google Apps Script webhook for the
+            Google-based access process. Partial submissions are disabled on
+            both forms. A valid source code in a direct link may accompany a
+            submitted enquiry.
           </p>
           <h2>4. How we collect personal data</h2>
           <p>We may collect personal data:</p>
@@ -439,10 +447,15 @@
             understand usage or support analytics.
           </p>
           <p>
-            Whether consent or an exception applies to current website analytics
-            and enquiry attribution is under review. The Cookie Notice explains
-            the technologies in use; it does not represent that a consent
-            control has been implemented.
+            The WAIA marketing site uses Cloudflare Web Analytics to measure
+            website use. You can object at
+            <a href="https://waia.co.uk/analytics-preferences/"
+              >analytics preferences</a
+            >. Your choice is kept in first-party
+            <code>localStorage</code> under
+            <code>waia:analytics-objection</code>. Visibility Check results are
+            held in <code>sessionStorage</code> for the browser tab. Marketing
+            attribution does not use persistent browser storage.
           </p>
           <p>
             More detail is available in our Cookie Notice:
@@ -473,38 +486,29 @@
             contractual protection.
           </p>
           <h2>9. Providers</h2>
-          <p>Providers used for different activities may include:</p>
+          <p>Providers used for different activities include:</p>
           <ul>
             <li>
-              Lovable, for application hosting, deployment, platform operation
-              or related services
+              Lovable, for WAIA hosting, backend infrastructure and
+              authentication emails
             </li>
             <li>
-              Supabase, for database, authentication, storage, backend and
-              related services
+              Supabase, as underlying database and backend infrastructure
+              managed by Lovable Cloud
             </li>
             <li>
-              GitHub, for code hosting, website hosting or deployment workflows
+              Cloudflare, for hosting and edge infrastructure and separately for
+              public website analytics
             </li>
             <li>
-              Cloudflare, for website analytics and any configured routing or
-              security services
+              Google, through Search Console for search performance and Apps
+              Script for Visibility Check form processing
             </li>
+            <li>Tally, for Contact Us and Visibility Check submissions</li>
             <li>
-              Microsoft 365 or Google Workspace, for email, documents, business
-              administration and support where used
+              Resend, for invitations, learner nudges and administrator digests;
+              Lovable separately provides authentication emails
             </li>
-            <li>
-              Hunter.io or similar tools, for business contact research,
-              outreach or campaign management where used
-            </li>
-            <li>Google Search Console, for website search performance</li>
-            <li>Tally, for public website enquiries</li>
-            <li>
-              Resend, for WAIA transactional emails as recorded in the product
-              operations runbook
-            </li>
-            <li>payment, accounting or invoicing tools, where used</li>
           </ul>
           <p>
             The active WAIA subprocessor list is maintained separately at
@@ -522,7 +526,10 @@
             Agreement, the UK Addendum to EU standard contractual clauses or
             applicable EU standard contractual clauses, with any required
             transfer assessment and supplementary measures. Supplier locations
-            and the mechanisms used for each transfer require verification.
+            and the mechanisms used depend on the supplier and service. Resend's
+            primary processing is in the United States; its data processing
+            agreement includes applicable EU standard contractual clauses and UK
+            transfer provisions.
           </p>
           <h2>11. How long we keep personal data</h2>
           <p>
@@ -622,9 +629,10 @@
             </table>
           </div>
           <p>
-            Actual retention and backup settings for WAIA Customer Personal Data
-            must be checked against the customer agreement and operational
-            configuration. We do not set a general retention period here.
+            WAIA Customer Personal Data is returned or deleted under the Data
+            Processing Agreement. Export and complete organisation deletion are
+            handled manually. Backup copies are removed through normal backup
+            retention cycles, subject to legal obligations.
           </p>
           <h2>12. Your rights</h2>
           <p>Depending on the circumstances, you may have rights to:</p>

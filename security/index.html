@@ -35,8 +35,8 @@
             protect WAIA and customer data.
           </p>
           <div class="meta-row">
-            <span>Proposed: 14 October 2026</span>
-            <span>Version: 1.1 draft</span>
+            <span>Last updated: 15 October 2026</span>
+            <span>Version: 1.2</span>
           </div>
         </section>
         <section class="legal-content">
@@ -68,13 +68,14 @@
             <li>learner</li>
           </ul>
           <p>
-            Organisation administrators should only see users, settings,
-            guidance and reporting connected to their own organisation.
+            Organisation administrators and learners have organisation-scoped
+            access. Platform administrators have cross-organisation access to
+            operate and support WAIA.
           </p>
           <p>
-            Platform administrator access should be restricted to authorised
-            Nineteen Point Two personnel and used only where necessary to
-            operate, support or secure the service.
+            Platform administrator access is limited to authorised Nineteen
+            Point Two personnel and used to operate, support or secure the
+            service.
           </p>
           <h2>3. Authentication</h2>
           <p>
@@ -82,28 +83,18 @@
             platform and infrastructure providers.
           </p>
           <p>
-            Authentication configuration should be reviewed regularly to
-            confirm:
+            Customer administrators manage access for their organisation's
+            users.
           </p>
-          <ul>
-            <li>only authorised users can access WAIA</li>
-            <li>administrator access is limited</li>
-            <li>inactive users can be removed</li>
-            <li>access is revoked when no longer required</li>
-            <li>
-              production credentials are not exposed in code or public
-              repositories
-            </li>
-          </ul>
           <h2>4. Data segregation</h2>
           <p>
-            WAIA is designed as a multi-tenant platform. Customer data should be
-            logically separated so that organisation administrators and learners
-            access only the records appropriate to their organisation and role.
+            WAIA is a multi-tenant platform. Database row-level security is
+            active on its public tables and supports organisation-scoped access
+            for organisation administrators and learners.
           </p>
           <p>
-            Row-level security and database access rules should be maintained
-            and tested where supported by the database provider.
+            Platform administrators retain intentional cross-organisation
+            access.
           </p>
           <h2>5. Infrastructure</h2>
           <p>
@@ -112,13 +103,11 @@
             services.
           </p>
           <p>
-            The WAIA product source shows Supabase-backed authentication and
-            data services, and Lovable service routes. The precise live hosting
-            arrangement and whether Supabase is contracted directly or through
-            Lovable need confirmation. GitHub is used for code hosting and
-            website deployment where relevant. The product operations runbook
-            records Resend as the transactional email route; email delivery is
-            distinct from application hosting.
+            WAIA runs on Lovable Cloud, with Supabase database and backend
+            infrastructure managed by Lovable. Lovable also provides
+            authentication emails. Resend delivers invitations, learner nudges
+            and administrator digests. Cloudflare supports hosting and edge
+            infrastructure.
           </p>
           <p>
             Nineteen Point Two relies on these providers for parts of the
@@ -127,11 +116,10 @@
             availability.
           </p>
           <h2>6. Encryption</h2>
-          <p>WAIA should use HTTPS for data in transit.</p>
+          <p>WAIA uses HTTPS for data in transit.</p>
           <p>
-            Encryption at rest depends on the relevant hosting, database and
-            storage providers. Provider documentation should be retained for
-            procurement review.
+            Storage security depends on the managed hosting and database
+            infrastructure.
           </p>
           <h2>7. Logging and monitoring</h2>
           <p>
@@ -143,32 +131,26 @@
             timestamps, error details and request metadata.
           </p>
           <p>
-            Log access should be limited to authorised personnel and retained
-            only as long as reasonably required.
+            Access to logs is limited to authorised personnel according to
+            operational need.
           </p>
           <h2>8. Backups and recovery</h2>
           <p>
-            Backup and recovery arrangements depend on the configured
-            infrastructure providers.
+            Daily database backups are available through the managed
+            infrastructure, with a rolling retention period of approximately 14
+            days. Point-in-time recovery is not available. Recovery depends on
+            the available backup and the circumstances of the incident; no
+            specific recovery time or absence of data loss is promised.
           </p>
-          <p>Nineteen Point Two should confirm and document:</p>
-          <ul>
-            <li>whether production data is backed up</li>
-            <li>backup frequency</li>
-            <li>backup retention</li>
-            <li>restore process</li>
-            <li>who can access backups</li>
-            <li>how deleted data is handled in backups</li>
-          </ul>
           <h2>9. Supplier security</h2>
           <p>
-            Nineteen Point Two uses suppliers to operate WAIA. Suppliers that
-            process Customer Personal Data should be covered by data processing
-            terms or equivalent contractual commitments.
+            Nineteen Point Two uses suppliers to operate WAIA. Its Data
+            Processing Agreement governs the appointment of subprocessors that
+            process Customer Personal Data.
           </p>
           <p>
-            Supplier security documentation should be reviewed and retained
-            where available.
+            The <a href="/subprocessors/">Subprocessor List</a> identifies
+            providers processing Customer Personal Data for WAIA.
           </p>
           <h2>10. Incident handling</h2>
           <p>
