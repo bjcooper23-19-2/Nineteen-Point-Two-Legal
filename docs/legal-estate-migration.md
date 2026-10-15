@@ -6,6 +6,7 @@ This repository owns the durable legal and procurement estate at `legal.nineteen
 - [ ] Add DNS CNAME for `legal.nineteenpointtwo.com` to the Pages target and enable HTTPS.
 - [ ] Verify every route, canonical tag, sitemap and `robots.txt` in production.
 - [ ] Update WAIA references to `https://legal.nineteenpointtwo.com/`; use `https://waia.co.uk/` and `https://app.waia.co.uk/login` for product links.
+- [ ] Link the approved Website Terms of Use from WAIA public pages and verify `https://legal.nineteenpointtwo.com/website-terms/` after deployment.
 - [ ] Update Outside Clarity and company references where relevant.
 - [ ] Only after verification, redirect legacy legal URLs on `www.nineteenpointtwo.com`.
 - [ ] Close WAIA issue #7 after owner confirmations and live-link verification.

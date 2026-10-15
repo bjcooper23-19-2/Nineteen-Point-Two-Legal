@@ -36,6 +36,10 @@ a {
 a:hover {
   color: var(--accent);
 }
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
 header {
   position: sticky;
   top: 0;
@@ -298,6 +302,9 @@ td p {
   }
 }
 @media (max-width: 760px) {
+  header {
+    position: static;
+  }
   .nav {
     flex-wrap: wrap;
     align-items: center;
@@ -319,11 +326,12 @@ td p {
   }
   .nav-links {
     order: 4;
-    display: none;
+    display: flex;
     width: 100%;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 4px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 14px;
     padding-top: 12px;
     border-top: 1px solid rgba(247, 243, 238, 0.1);
     font-size: 0.88rem;

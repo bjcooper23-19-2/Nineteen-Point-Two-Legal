@@ -10,14 +10,15 @@
     />
     <link rel="canonical" href="https://legal.nineteenpointtwo.com/cookies/" />
     <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/assets/css/legal.css" />
+    <link rel="stylesheet" href="/assets/css/legal.css?v=20261014" />
   </head>
   <body>
     <header>
       <nav class="nav" aria-label="Primary">
         <a class="brand" href="/"><strong>NINETEEN POINT TWO</strong></a>
         <div class="nav-links">
-          <a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a
+          <a href="/website-terms/">Website terms</a
+          ><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a
           ><a href="/data-processing-agreement/">DPA</a
           ><a href="/security/">Security</a
           ><a href="/subprocessors/">Subprocessors</a>
@@ -34,8 +35,8 @@
             on the website and WAIA product.
           </p>
           <div class="meta-row">
-            <span>Last updated: 9 September 2026</span>
-            <span>Version: 1.1</span>
+            <span>Last updated: 15 October 2026</span>
+            <span>Version: 1.3</span>
           </div>
         </section>
         <section class="legal-content">
@@ -54,11 +55,8 @@
             preferences, support security, measure usage or support marketing
             activity.
           </p>
-          <h2>2. How we use cookies</h2>
-          <p>
-            We may use cookies and similar technologies for the following
-            purposes.
-          </p>
+          <h2>2. Technologies we use</h2>
+          <p>Our current uses include the following:</p>
           <div class="table-wrap">
             <table>
               <tbody>
@@ -70,7 +68,7 @@
                     <h3>Purpose</h3>
                   </td>
                   <td>
-                    <p>Consent required?</p>
+                    <p>How it works</p>
                   </td>
                 </tr>
                 <tr>
@@ -80,11 +78,11 @@
                   <td>
                     <p>
                       Login, security, session management, account access, load
-                      balancing, cookie preferences
+                      balancing
                     </p>
                   </td>
                   <td>
-                    <p>No, where essential to provide the requested service</p>
+                    <p>Used where needed for the service a user requests</p>
                   </td>
                 </tr>
                 <tr>
@@ -92,10 +90,13 @@
                     <p>Functional</p>
                   </td>
                   <td>
-                    <p>Remembering preferences or improving user experience</p>
+                    <p>Remembering an analytics objection</p>
                   </td>
                   <td>
-                    <p>Usually yes, unless strictly necessary</p>
+                    <p>
+                      First-party <code>localStorage</code> key
+                      <code>waia:analytics-objection</code>
+                    </p>
                   </td>
                 </tr>
                 <tr>
@@ -103,27 +104,24 @@
                     <p>Analytics</p>
                   </td>
                   <td>
-                    <p>
-                      Understanding website or platform usage, performance and
-                      content effectiveness
-                    </p>
+                    <p>Cloudflare Web Analytics on the WAIA marketing site</p>
                   </td>
                   <td>
-                    <p>Yes, unless a specific legal exemption applies</p>
+                    <p>Manually installed browser beacon; see section 4</p>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <p>Marketing</p>
+                    <p>Visibility Check</p>
+                  </td>
+                  <td>
+                    <p>Results held in the browser tab</p>
                   </td>
                   <td>
                     <p>
-                      Campaign tracking, pixels, remarketing or advertising
-                      measurement
+                      <code>sessionStorage</code>, removed when the tab session
+                      ends
                     </p>
-                  </td>
-                  <td>
-                    <p>Yes</p>
                   </td>
                 </tr>
               </tbody>
@@ -132,8 +130,8 @@
           <h2>3. Strictly necessary cookies</h2>
           <p>
             Strictly necessary cookies are used to provide services you have
-            requested, such as secure login, authentication, account access,
-            platform security and remembering cookie preferences.
+            requested, such as secure login, authentication, account access and
+            platform security.
           </p>
           <p>
             These cookies cannot usually be switched off because the service
@@ -141,45 +139,44 @@
           </p>
           <h2>4. Analytics cookies</h2>
           <p>
-            Analytics cookies help us understand how people use the website or
-            platform. For example, they may help us understand which pages are
-            viewed, which content is useful, and where errors occur.
+            The WAIA marketing website uses a manually installed Cloudflare Web
+            Analytics beacon to measure page loads and website use. Cloudflare
+            describes the service as cookieless. The website disables automatic
+            Cloudflare snippet injection.
           </p>
           <p>
-            We will only use non-essential analytics cookies where required
-            consent has been obtained.
+            You can object to this analytics use at
+            <a href="https://waia.co.uk/analytics-preferences/"
+              >analytics preferences</a
+            >. The choice is saved in first-party <code>localStorage</code> so
+            it applies on later visits from that browser. Clearing browser
+            storage removes the saved choice.
           </p>
           <p>
-            <b>Current analytics tools:</b> Google Search Console only. No
-            Google Analytics, Plausible, LinkedIn Insight Tag, Meta Pixel or
-            advertising pixel is currently known to be active.
+            Google Search Console separately helps us understand search
+            visibility. It does not require a Search Console browser tag on the
+            WAIA site.
           </p>
-          <h2>4a. WAIA enquiry source attribution</h2>
+          <h2>5. Source attribution, Visibility Check and forms</h2>
           <p>
-            WAIA may store an approved short enquiry source code in
-            <code>sessionStorage</code> and pass it to the Tally enquiry form.
-            The implementation stores approved short values only; it does not
-            store identities, page histories or timestamps and does not create
-            behavioural profiles. The consent or exemption treatment for this
-            storage remains an owner/legal decision.
-          </p>
-          <h2>5. Marketing cookies</h2>
-          <p>
-            Marketing cookies may be used to understand campaign performance or
-            support relevant advertising.
+            A valid source code in a direct WAIA link can be passed to a form
+            without being stored in the browser. Marketing attribution does not
+            use <code>sessionStorage</code>. Visibility Check results are held
+            in <code>sessionStorage</code> within the browser tab so you can
+            view them during that tab session.
           </p>
           <p>
-            <b>Current marketing cookies or pixels:</b> We do not currently use
-            marketing cookies or advertising pixels as far as currently known.
+            Tally forms load after you choose to open them. Tally may use its
+            own storage and access technologies when the form opens; its notice
+            explains those technologies. Contact Us and Visibility Check do not
+            save partial submissions.
           </p>
-          <h2>6. Managing cookies</h2>
+          <h2>6. Managing browser storage</h2>
           <p>
-            You can manage your cookie preferences through our cookie banner or
-            settings tool where available.
-          </p>
-          <p>
-            You can also control cookies through your browser settings. Blocking
-            some cookies may affect how the website or WAIA product works.
+            Use the analytics preferences page linked above to object to
+            Cloudflare Web Analytics. You can also manage stored data and
+            cookies through your browser settings. Blocking some cookies may
+            affect how the website or WAIA product works.
           </p>
           <h2>7. Changes to this Cookie Notice</h2>
           <p>

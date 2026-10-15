@@ -13,14 +13,15 @@
       href="https://legal.nineteenpointtwo.com/subprocessors/"
     />
     <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/assets/css/legal.css" />
+    <link rel="stylesheet" href="/assets/css/legal.css?v=20261014" />
   </head>
   <body>
     <header>
       <nav class="nav" aria-label="Primary">
         <a class="brand" href="/"><strong>NINETEEN POINT TWO</strong></a>
         <div class="nav-links">
-          <a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a
+          <a href="/website-terms/">Website terms</a
+          ><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a
           ><a href="/data-processing-agreement/">DPA</a
           ><a href="/security/">Security</a
           ><a href="/subprocessors/">Subprocessors</a>
@@ -37,8 +38,8 @@
             improve WAIA where they may process customer personal data.
           </p>
           <div class="meta-row">
-            <span>Last updated: 9 September 2026</span>
-            <span>Version: 1.1</span>
+            <span>Last updated: 15 October 2026</span>
+            <span>Version: 1.3</span>
           </div>
         </section>
         <section class="legal-content">
@@ -50,89 +51,48 @@
             Where these providers process Customer Personal Data on behalf of
             Nineteen Point Two, they are treated as subprocessors.
           </p>
-          <p>This list is maintained as the technical setup changes.</p>
-          <h2>Current confirmed supplier posture</h2>
+          <p>
+            The providers below process Customer Personal Data for WAIA. The
+            processing location describes the relevant service, and does not
+            exclude limited support access from other locations where lawful.
+          </p>
+          <h2>WAIA subprocessors</h2>
           <ul>
             <li>
-              Lovable should be treated as an active WAIA subprocessor while
-              WAIA is hosted and operated through Lovable Cloud or related
-              Lovable services.
+              <b>Lovable:</b> managed application hosting, backend
+              infrastructure, database service and authentication emails. The
+              production database is hosted in Europe (Stockholm). Lovable
+              manages the underlying Supabase infrastructure and its own
+              supplier chain.
             </li>
             <li>
-              Lovable’s published terms describe Lovable Cloud as a managed
-              hosting and back-end environment that may include database
-              hosting, authentication, file/object storage and API endpoints,
-              provisioned on third-party infrastructure currently identified as
-              Supabase.
+              <b>Cloudflare:</b> hosting and edge infrastructure supporting
+              WAIA, including delivery and security of application traffic.
+              Processing locations may vary with network routing.
             </li>
             <li>
-              Supabase should be treated as a core infrastructure subprocessor
-              in the WAIA chain because WAIA uses Supabase-backed
-              authentication, database-backed tenancy, learner records,
-              progress, certificates, organisation guidance and
-              acknowledgements.
-            </li>
-            <li>
-              Where Supabase is provided through Lovable Cloud, Supabase can be
-              described as part of Lovable’s underlying
-              infrastructure/subprocessor chain. If Nineteen Point Two later
-              controls a standalone Supabase project directly, Supabase should
-              also be listed as Nineteen Point Two’s direct subprocessor.
-            </li>
-            <li>
-              Lovable and/or Supabase should be treated as the current
-              transactional email route for WAIA account and invite emails,
-              based on the current operational understanding.
-            </li>
-            <li>
-              Microsoft 365 and Google Workspace should be treated as business
-              operations suppliers for correspondence, documents and
-              administration.
-            </li>
-            <li>
-              Google Search Console is currently used for website search
-              visibility/performance only. No Google Analytics, advertising
-              pixel or behavioural analytics tool is currently known to be
-              active.
-            </li>
-            <li>
-              OpenAI, Anthropic, Gemini or similar AI model providers are not
-              active WAIA runtime subprocessors based on current evidence and
-              should not receive learner personal data unless a future feature
-              is documented and approved.
-            </li>
-            <li>
-              Resend support exists in product source but production supplier
-              use requires owner/configuration confirmation; it is not listed as
-              an active subprocessor on source availability alone.
-            </li>
-            <li>
-              Tally is treated as an enquiry-processing provider for submitted
-              enquiries, not assumed to receive WAIA learner evidence.
-            </li>
-            <li>
-              OpenAI and Stripe remain separately identified for Outside Clarity
-              where applicable; they are not active WAIA runtime subprocessors
-              on current evidence.
+              <b>Resend:</b> delivery of invitations, learner nudges and
+              administrator digests. Its primary processing location is the
+              United States. Applicable EU standard contractual clauses and UK
+              transfer provisions are included in its data processing agreement.
             </li>
           </ul>
-          <h2>Providers not intended to receive learner personal data</h2>
           <p>
-            Some tools may be used for internal content creation, code
-            generation, planning or marketing without intentionally receiving
-            Customer Personal Data.
+            Supabase operates beneath Lovable Cloud and is not listed as a
+            separate direct Nineteen Point Two subprocessor.
+          </p>
+          <h2>Website and business services</h2>
+          <p>
+            Cloudflare also provides public website analytics. Tally hosts the
+            Contact Us and Visibility Check forms. The Visibility Check form
+            sends submissions to a Google Apps Script webhook for the existing
+            Google-based access process. These are public website and enquiry
+            services, rather than WAIA learner-data subprocessors.
           </p>
           <p>
-            Customer Personal Data should not be entered into these tools
-            unless:
+            WAIA does not currently send Customer Personal Data to an AI model
+            provider as part of the application.
           </p>
-          <ul>
-            <li>the tool is listed as an active subprocessor where required</li>
-            <li>a data processing agreement is in place</li>
-            <li>the processing purpose is documented</li>
-            <li>the customer has been informed where required</li>
-            <li>the feature or workflow has been approved internally</li>
-          </ul>
           <h2>Subprocessor updates</h2>
           <p>
             Nineteen Point Two may update this list as providers are added,
