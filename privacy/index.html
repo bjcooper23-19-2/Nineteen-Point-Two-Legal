@@ -35,8 +35,8 @@
             personal data across the website, customer relationships and WAIA.
           </p>
           <div class="meta-row">
-            <span>Last updated: 15 October 2026</span>
-            <span>Version: 1.3</span>
+            <span>Last updated: 9 November 2026</span>
+            <span>Version: 1.4</span>
           </div>
         </section>
         <section class="legal-content">
@@ -47,7 +47,7 @@
           <p>It applies to:</p>
           <ul>
             <li>visitors to the Nineteen Point Two website</li>
-            <li>visitors to WAIA pages</li>
+            <li>visitors to WAIA pages, including waia.co.uk and waiausa.com</li>
             <li>prospects and business contacts</li>
             <li>customer contacts</li>
             <li>WAIA organisation administrators</li>
@@ -211,12 +211,13 @@
             ask for it and there is a clear reason to do so.
           </p>
           <p>
-            Tally hosts our Contact Us and Visibility Check forms. The Contact
-            Us form has no connected external integration. Visibility Check
-            submissions also go to a Google Apps Script webhook for the
-            Google-based access process. Partial submissions are disabled on
-            both forms. A valid source code in a direct link may accompany a
-            submitted enquiry.
+            Tally hosts WAIA enquiries from both waia.co.uk and waiausa.com.
+            A short source code may accompany an enquiry to identify the
+            originating website and campaign. The UK-only Visibility Check
+            uses a separate Tally form and Google Apps Script webhook for
+            its access process; that journey is not offered on waiausa.com.
+            The current WAIA enquiry and UK Visibility Check forms do not save
+            partial submissions.
           </p>
           <h2>4. How we collect personal data</h2>
           <p>We may collect personal data:</p>
@@ -447,15 +448,18 @@
             understand usage or support analytics.
           </p>
           <p>
-            The WAIA marketing site uses Cloudflare Web Analytics to measure
-            website use. You can object at
-            <a href="https://waia.co.uk/analytics-preferences/"
-              >analytics preferences</a
-            >. Your choice is kept in first-party
-            <code>localStorage</code> under
-            <code>waia:analytics-objection</code>. Visibility Check results are
-            held in <code>sessionStorage</code> for the browser tab. Marketing
-            attribution does not use persistent browser storage.
+            The UK WAIA marketing website uses Cloudflare Web Analytics for
+            website statistics, subject to its applicable controls. The US
+            marketing website has separate analytics configuration and may
+            operate without a browser analytics beacon. You can manage the
+            relevant website's analytics preference at
+            <a href="https://waia.co.uk/analytics-preferences/">UK WAIA analytics preferences</a>
+            or <a href="https://waiausa.com/analytics-preferences/">US WAIA analytics preferences</a>.
+            Where the preference is saved, it uses that website's first-party
+            <code>localStorage</code> key <code>waia:analytics-objection</code>;
+            a choice on one domain does not automatically apply to the other.
+            UK Visibility Check results use browser-tab <code>sessionStorage</code>.
+            Marketing source attribution does not use persistent browser storage.
           </p>
           <p>
             More detail is available in our Cookie Notice:
